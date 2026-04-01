@@ -1,0 +1,62 @@
+/* ── Recipe Results ───────────────────────────────────── */
+
+/* Tablet and above */
+@media (min-width: 500px) {
+    .edit-and-filter-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 24px;
+        align-items: center;
+    }
+
+    .filter-button {
+        margin-left: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 499px) {
+    .edit-and-filter-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 5%;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .filter-button {
+        margin-left: auto;
+    }
+}
+
+/* ── Filter button styling ────────────────────────────── */
+.filter-button button {
+    background-color: var(--main_color);
+    border: 1px solid var(--border);
+    color: var(--text_primary);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.filter-button button:hover {
+    background-color: var(--accent_color);
+    border-color: var(--accent_color);
+    color: white;
+}
+
+/* ── Description banner ───────────────────────────────── */
+#description {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px 20px;
+    font-family: var(--mainfont);
+    font-style: italic;
+    color: var(--text_muted);
+    font-size: 1.1rem;
+}

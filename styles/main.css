@@ -1,0 +1,270 @@
+/* ── Google Fonts ─────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Design Tokens ────────────────────────────────────── */
+:root {
+    --main_color:    #f5e6cc;
+    --accent_color:  #c97d5e;
+    --accent_light:  #e8b99a;
+    --surface:       #fdf7ef;
+    --text_primary:  #2c2015;
+    --text_muted:    #7a6352;
+    --border:        #e0cdb8;
+
+    --mainfont:   "DM Serif Display", Georgia, serif;
+    --textfont:   "DM Sans", system-ui, sans-serif;
+    --backupfont: "DM Sans", system-ui, sans-serif;
+
+    --radius-sm:  8px;
+    --radius-md:  16px;
+    --radius-lg:  24px;
+    --shadow-sm:  0 1px 4px rgba(100, 60, 20, 0.08);
+    --shadow-md:  0 4px 16px rgba(100, 60, 20, 0.12);
+    --transition: 0.2s ease;
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--textfont);
+    background-color: var(--surface);
+    color: var(--text_primary);
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--mainfont);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--text_primary);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+
+/* ── Layout ───────────────────────────────────────────── */
+.wrapper {
+    display: grid;
+    gap: 0;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    width: 100%;
+}
+
+#nav    { grid-area: nav; }
+#header { grid-area: header; }
+#main   { grid-area: main; }
+#footer { grid-area: footer; }
+
+/* ── Logo ─────────────────────────────────────────────── */
+#header a {
+    display: inline-block;
+}
+
+#logo {
+    display: block;
+    max-width: 130px;
+    height: auto;
+}
+
+/* ── Navigation ───────────────────────────────────────── */
+#nav {
+    border-radius: var(--radius-md);
+    padding: 4px 8px;
+    margin-bottom: 24px;
+}
+
+#nav a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--text_primary);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+#nav a:hover {
+    color: var(--accent_color);
+}
+
+/* ── Buttons ──────────────────────────────────────────── */
+.btn {
+    font-family: var(--textfont);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    margin: 0;
+    background-color: var(--main_color);
+    border: none;
+    border-radius: var(--radius-sm);
+    text-align: left;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--accent_light);
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+footer {
+    padding: 48px 0 32px;
+    color: var(--text_muted);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.footer-links,
+.newsletter-signup {
+    margin: 20px;
+}
+
+.footer-links h4,
+.newsletter-signup h4 {
+    font-family: var(--mainfont);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text_primary);
+    margin-bottom: 14px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--text_muted);
+    font-size: 0.9rem;
+    transition: color var(--transition);
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent_color);
+}
+
+.newsletter-signup input {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: white;
+    margin-right: 8px;
+    width: 220px;
+    font-family: var(--textfont);
+    font-size: 0.9rem;
+    color: var(--text_primary);
+}
+
+.newsletter-signup input:focus {
+    outline: 2px solid var(--accent_light);
+    border-color: var(--accent_color);
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    background-color: var(--accent_color);
+    color: white;
+    border: none;
+    font-family: var(--textfont);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--text_primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    font-size: 0.85rem;
+}
+
+.footer-bottom p { margin: 0; }
+
+.footer-bottom a {
+    color: var(--text_muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: color var(--transition);
+}
+
+.footer-bottom a:hover {
+    color: var(--accent_color);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+    body {
+        margin: 0 16px;
+    }
+
+    .dropdown {
+        margin: 12px 8px;
+    }
+
+    .dropdown-menu {
+        margin: 0 24px;
+    }
+
+    .dropdown-item {
+        display: block;
+        padding: 6px;
+    }
+
+    #nav {
+        background-color: var(--main_color);
+        box-shadow: var(--shadow-sm);
+    }
+
+    #login-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    nav .btn {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin-top: 6px;
+    }
+
+    .nav-item {
+        padding: 10px 16px;
+        color: var(--text_primary);
+        font-family: var(--textfont);
+        font-weight: 500;
+        text-align: center;
+    }
+}

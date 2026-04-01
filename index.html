@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantry Panic</title>
+    <link rel="icon" href="https://fav.farm/%F0%9F%8F%A1" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="stylesheet" href="styles/components/accentbar.css">
+    <link rel="stylesheet" href="styles/pages/home.css">
+    <link rel="stylesheet" href="styles/components/titlebar.css">
+    <script src="scripts/pantrysearch.js"></script>
+</head>
+
+<body>
+    <div class="accent-bar"></div>
+
+    <nav id="nav">
+        <div class="dropdown">
+            <!-- <button class="btn" type="button">Menu</button> -->
+            <div class="dropdown-menu navbar">
+                <a class="dropdown-item nav-item" href="index.html">Home</a>
+                <a class="dropdown-item nav-item" href="mypantry.html">My Pantry</a>
+                <a class="dropdown-item nav-item" href="saved_recipes.html">Saved Recipes</a>
+                <a class="dropdown-item nav-item" href="search_by_ingredients.html">Ingredient Search</a>
+                <button class="dropdown-item nav-item" id="pantry-search-button">Pantry Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="title-link-container">
+        <h3><a href="index.html" class="title-link"><img src="images/logo.png" alt="Pantry Panic Logo" id="logo"></a>
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        <header id="header">
+            <p id="intro">Unlock the magic of your pantry with us! Simply share the ingredients you have on hand, and
+                let Pantry Panic guide you to delicious recipes tailored to minimize your shopping list. Cook smarter,
+                waste less, and savor every bite!</p>
+        </header>
+
+        <main id="main">
+            <div class="home-search">
+                <section>
+                    <div class="center">
+                        <img class="home-search-img" src="images/mypantry.jpg" alt="Pantry Image">
+                    </div>
+                    <h4 class="center">
+                        <a href="mypantry.html" rel="">My Pantry</a>
+                    </h4>
+                </section>
+                <section>
+                    <div class="center">
+                        <img class="home-search-img" src="images/saved-recipes" alt="Saved recipes">
+                    </div>
+                    <h4 class="center">
+                        <a href="saved_recipes.html" rel="">Saved Recipes</a>
+                    </h4>
+                </section>
+            </div>
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Pantry Panic</p>
+        </div>
+    </footer>
+</body>
+
+</html>

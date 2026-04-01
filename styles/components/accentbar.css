@@ -1,0 +1,16 @@
+/* ── Accent Bar ───────────────────────────────────────── */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .accent-bar {
+        background: linear-gradient(90deg, var(--main_color) 0%, var(--accent_light) 60%, var(--accent_color) 100%);
+        height: 5px;
+        width: 100%;
+        opacity: 0.85;
+    }
+}

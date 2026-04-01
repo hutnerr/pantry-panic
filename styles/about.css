@@ -1,0 +1,32 @@
+/* ── About Page ───────────────────────────────────────── */
+
+div main {
+    padding: 3% 10%;
+}
+
+.about-section {
+    margin: 48px 24px;
+    padding: 36px 40px;
+    background-color: var(--main_color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+.about-section h2 {
+    font-family: var(--mainfont);
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text_primary);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.about-section p {
+    font-family: var(--textfont);
+    font-size: 1.05rem;
+    color: var(--text_muted);
+    line-height: 1.75;
+    margin-bottom: 0;
+}

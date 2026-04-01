@@ -1,0 +1,95 @@
+/* ── Search by Ingredients ────────────────────────────── */
+
+/* Mobile */
+@media (max-width: 499px) {
+    .simple-search-bar {
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .ingredient-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 16px 5%;
+        padding: 12px;
+        gap: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 500px) {
+    .ingredient-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 12px;
+        height: fit-content;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .ingredient-list {
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+}
+
+/* ── Container ────────────────────────────────────────── */
+#bar-and-list-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 12px;
+    height: fit-content;
+}
+
+/* ── Ingredient Pill ──────────────────────────────────── */
+.ingredient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: 100px;
+    background-color: var(--main_color);
+    border: 1px solid var(--border);
+    font-family: var(--textfont);
+    font-size: 0.9rem;
+    color: var(--text_primary);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ingredient:hover {
+    border-color: var(--accent_light);
+    box-shadow: 0 2px 8px rgba(100, 60, 20, 0.1);
+}
+
+.ingredient button {
+    background: transparent;
+    border: none;
+    color: var(--text_muted);
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ingredient button:hover {
+    background-color: var(--accent_color) !important;
+    color: white !important;
+    box-shadow: none;
+}
+
+main {
+    margin-bottom: 100px;
+}

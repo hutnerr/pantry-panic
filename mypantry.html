@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/accentbar.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="stylesheet" href="styles/pages/mypantry.css">
+    <link rel="stylesheet" href="styles/components/titlebar.css">
+    <script src="scripts/main.js"></script>
+    <title>My Pantry</title>
+    <link rel="icon" href="https://fav.farm/%F0%9F%8F%A1" type="image/png">
+    <script src="scripts/pantrysearch.js"></script>
+    <script src="scripts/mypantry.js"></script>
+</head>
+
+<body>
+    <div class="accent-bar"></div>
+
+    <nav id="nav">
+        <div class="dropdown">
+            <!-- <button class="btn" type="button">Menu</button> -->
+            <div class="dropdown-menu navbar">
+                <a class="dropdown-item nav-item" href="index.html">Home</a>
+                <a class="dropdown-item nav-item" href="mypantry.html">My Pantry</a>
+                <a class="dropdown-item nav-item" href="saved_recipes.html">Saved Recipes</a>
+                <a class="dropdown-item nav-item" href="search_by_ingredients.html">Ingredient Search</a>
+                <button type="button" class="dropdown-item nav-item" id="pantry-search-button">Pantry Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="title-link-container">
+        <h1><a href="index.html" class="title-link"><img src="images/logo.png" alt="Pantry Panic Logo" id="logo"></a>
+        </h1>
+    </div>
+
+    <div class="wrapper">
+        <main class="pantry">
+            <div class="pantry-search">
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Meat</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Red Meat</label>
+                        <label><input type="checkbox">White Meat</label>
+                        <label><input type="checkbox">Beef</label>
+                        <label><input type="checkbox">Chicken</label>
+                        <label><input type="checkbox">Pork</label>
+                        <label><input type="checkbox">Duck</label>
+                    </div>
+                </div>
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Seafood</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Fish</label>
+                        <label><input type="checkbox">Shellfish</label>
+                        <label><input type="checkbox">Echinoderms</label>
+                        <label><input type="checkbox">Medusozoa</label>
+                        <label><input type="checkbox">Tunicates (sea squirts)</label>
+                        <label><input type="checkbox">Processed seafood</label>
+                    </div>
+                </div>
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Diary</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Milk</label>
+                        <label><input type="checkbox">Cheese</label>
+                        <label><input type="checkbox">Yogurt</label>
+                        <label><input type="checkbox">Egg</label>
+                        <label><input type="checkbox">Butter</label>
+                    </div>
+                </div>
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Vegetables</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Root</label>
+                        <label><input type="checkbox">Green</label>
+                        <label><input type="checkbox">Seed</label>
+                        <label><input type="checkbox">Cruciferous</label>
+                    </div>
+                </div>
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Fruits</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Tomato</label>
+                        <label><input type="checkbox">Strawberry</label>
+                        <label><input type="checkbox">Mango</label>
+                    </div>
+                </div>
+
+                <div class="has-submenu">
+                    <button class="category-button" type="button">Grains</button>
+                    <div class="pantry-search-submenu">
+                        <label><input type="checkbox">Rice</label>
+                        <label><input type="checkbox">Wheat</label>
+                        <label><input type="checkbox">Barley</label>
+                        <label><input type="checkbox">Oat</label>
+                        <label><input type="checkbox">Corn</label>
+                    </div>
+
+            </div>
+        </main>
+
+        <div>
+            <button type="button" id="saveBlobBtn">Save My Pantry</button>
+            <label for="loadBlobInput">Load My Pantry:</label>
+            <input type="file" id="loadBlobInput" accept="application/json">
+        </div>
+
+
+        <footer id="footer">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Pantry Panic</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

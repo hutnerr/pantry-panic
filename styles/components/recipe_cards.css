@@ -1,0 +1,111 @@
+/* ── Recipe Card Grid ─────────────────────────────────── */
+
+/* Mobile */
+@media (max-width: 500px) {
+    .recipe-card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 16px;
+        gap: 16px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 775px) {
+    .recipe-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 24px;
+        gap: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .recipe-card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 40px 80px;
+        gap: 24px;
+    }
+}
+
+/* ── Recipe Card ──────────────────────────────────────── */
+.recipe-card {
+    background-color: var(--main_color);
+    padding: 12px;
+    border-radius: var(--radius-lg);
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
+}
+
+.recipe-card:hover {
+    background-color: var(--main_color);
+    border-color: var(--accent_light);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+/* ── Card Image ───────────────────────────────────────── */
+.recipe-card-image-button {
+    background-color: transparent;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.recipe-card-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .recipe-card-image {
+    transform: scale(1.03);
+}
+
+/* ── Save / Delete Button ─────────────────────────────── */
+.recipe-card .toggle-save-button {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.recipe-card .toggle-save-button:hover {
+    background-color: var(--accent_light);
+    color: white;
+    box-shadow: none;
+}
+
+.recipe-card .toggle-save-button-image {
+    width: 20px;
+    height: 20px;
+}
+
+/* ── Recipe Link ──────────────────────────────────────── */
+.recipe-link {
+    display: flex;
+    justify-content: center;
+    font-family: var(--mainfont);
+    font-size: 1rem;
+    color: var(--text_primary);
+    transition: color 0.2s ease;
+}
+
+.recipe-link:hover {
+    color: var(--accent_color);
+}

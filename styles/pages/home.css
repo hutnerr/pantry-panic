@@ -1,0 +1,89 @@
+/* ── Home Page ────────────────────────────────────────── */
+
+#intro {
+    font-family: var(--mainfont);
+    color: var(--text_primary);
+    line-height: 1.4;
+}
+
+#intro p {
+    font-family: var(--textfont);
+    font-size: 1.05rem;
+    color: var(--text_muted);
+    line-height: 1.7;
+}
+
+.home-search {
+    display: grid;
+    gap: 16px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#menu-icon img {
+    width: 15px;
+}
+
+/* ── Mobile ───────────────────────────────────────────── */
+@media (max-width: 499px) {
+    img {
+        max-width: 80vw;
+    }
+
+    #intro {
+        margin: 24px 16px;
+    }
+}
+
+/* ── Tablet ───────────────────────────────────────────── */
+@media (min-width: 500px) {
+    .home-search {
+        display: grid;
+        grid-template-areas: "my-pantry saved-recipes";
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        gap: 24px;
+        width: 100%;
+    }
+
+    #my-pantry {
+        grid-area: my-pantry;
+        display: flex;
+        justify-content: center;
+    }
+
+    #saved-recipes {
+        grid-area: saved-recipes;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 200px;
+        max-height: 224px;
+        z-index: -1;
+        border-radius: var(--radius-md);
+    }
+
+    #intro {
+        margin: 32px 50px;
+    }
+}
+
+/* ── Desktop ──────────────────────────────────────────── */
+@media (min-width: 768px) {
+    img {
+        max-width: 300px;
+        max-height: 330px;
+    }
+}
+
+@media (min-width: 1000px) {
+    img {
+        max-width: 450px;
+        max-height: 500px;
+    }
+}

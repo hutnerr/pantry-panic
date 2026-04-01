@@ -1,0 +1,119 @@
+/* ── My Pantry ────────────────────────────────────────── */
+
+.pantry button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin: 12px 0;
+    width: 100%;
+    text-align: left;
+    font-family: var(--textfont);
+    font-size: 0.95rem;
+    color: var(--text_primary);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.pantry button:hover {
+    background-color: transparent !important;
+    color: var(--accent_color) !important;
+    box-shadow: none;
+}
+
+.pantry-search > .has-submenu {
+    margin: 20px;
+    background-color: var(--main_color);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease;
+}
+
+.pantry-search > .has-submenu:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.pantry-search-submenu {
+    margin: 4px 12px 0;
+}
+
+.pantry .category-button {
+    border-radius: var(--radius-sm);
+    background-color: var(--accent_light);
+    color: var(--text_primary);
+    padding: 7px 14px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pantry .category-button:hover {
+    background-color: var(--accent_color) !important;
+    color: white !important;
+}
+
+#top_search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    margin-right: 40px;
+}
+
+#bottom_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+#bottom_search button,
+#top_search button {
+    padding: 12px 28px;
+    background-color: var(--accent_color);
+    color: white;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+}
+
+#bottom_search button:hover,
+#top_search button:hover {
+    background-color: var(--text_primary) !important;
+    color: white !important;
+}
+
+label {
+    font-family: var(--textfont);
+    font-weight: 400;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px;
+    color: var(--text_muted);
+    cursor: pointer;
+}
+
+label:hover {
+    color: var(--text_primary);
+}
+
+button {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* ── Desktop grid ─────────────────────────────────────── */
+@media (min-width: 1000px) {
+    .pantry {
+        background-color: transparent;
+    }
+
+    .pantry-search {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+}

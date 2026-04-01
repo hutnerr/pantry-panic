@@ -1,0 +1,31 @@
+/* ── Title Bar ────────────────────────────────────────── */
+.title-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0 8px;
+}
+
+.title-link {
+    display: inline-block;
+    font-family: var(--mainfont);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: var(--radius-md);
+    margin: 0 auto;
+    color: var(--text_primary);
+    background-color: transparent;
+    transition: color 0.2s ease;
+}
+
+.title-link:hover {
+    color: var(--accent_color);
+}

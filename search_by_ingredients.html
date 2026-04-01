@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Search</title>
+    <link rel="icon" href="https://fav.farm/%F0%9F%94%8E" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="stylesheet" href="styles/components/recipe_cards.css">
+    <link rel="stylesheet" href="styles/components/accentbar.css">
+    <link rel="stylesheet" href="styles/components/titlebar.css">
+    <link rel="stylesheet" href="styles/pages/saved_recipies.css">
+    <link rel="stylesheet" href="styles/pages/search_by_ingredients.css">
+    <script src="scripts/searchbying.js"></script>
+    <script src="scripts/pantrysearch.js"></script>
+</head>
+
+<body>
+    <div class="accent-bar"></div>
+
+    <nav id="nav">
+        <div class="dropdown">
+            <!-- <button class="btn" type="button">Menu</button> -->
+            <div class="dropdown-menu navbar">
+                <a class="dropdown-item nav-item" href="index.html">Home</a>
+                <a class="dropdown-item nav-item" href="mypantry.html">My Pantry</a>
+                <a class="dropdown-item nav-item" href="saved_recipes.html">Saved Recipes</a>
+                <a class="dropdown-item nav-item" href="search_by_ingredients.html">Ingredient Search</a>
+                <button class="dropdown-item nav-item" id="pantry-search-button">Pantry Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="title-link-container">
+        <h1><a href="index.html" class="title-link"><img src="images/logo.png" alt="Pantry Panic Logo" id="logo"></a>
+        </h1>
+    </div>
+
+    <h2 id="title"><label for="search-bar">Search By Ingredients</label></h2>
+
+    <main>
+        <div id="bar-and-list-container">
+            <form class="simple-search-bar">
+                <input type="text" id="search-bar" placeholder="For example: beans, pork, rice">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Pantry Panic</p>
+        </div>
+    </footer>
+</body>
+
+</html>
