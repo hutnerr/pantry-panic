@@ -28,3 +28,5 @@ Pantry Panic offers a simple, user-friendly interface with a clean and modern de
 2. Click search to find matching recipes  
 3. Browse results and view full recipe details  
 4. Save your favorite recipes for later  
+
+![](https://www.hunter-baker.com/resources/images/projects/pantry-panic.png)
