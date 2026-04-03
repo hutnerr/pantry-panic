@@ -4,7 +4,7 @@ Pantry Panic is a recipe management web application designed to help users disco
 
 This project was developed as part of a collaborative web development effort using Git and GitHub. My primary contribution focused on backend integration, including working with APIs and handling data flow between the application and external services.
 
-> Note: The live demo is currently non-functional due to the API key being invalid.
+> Note: The live demo is currently non-functional due to the API key being invalid. You can still view it [here](https://hutnerr.github.io/pantry-panic/).
 
 **Tech Stack:**
 - HTML, CSS, JavaScript  
