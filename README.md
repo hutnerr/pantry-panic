@@ -23,4 +23,4 @@ Pantry Panic offers a simple, user-friendly interface with a clean and modern de
 - Import/export saved recipes  
 - Fully responsive design with mobile support  
 
-![](https://www.hunter-baker.com/resources/images/projects/pantry-panic.png)
+![](https://www.hunter-baker.com/assets/projects/pantry_panic/pantry-panic.png)
